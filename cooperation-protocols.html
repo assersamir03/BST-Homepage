@@ -24,17 +24,60 @@
     <link rel="stylesheet" href="css/style.css">
 	
 	<style>
-		.outlined-text {
-		  font-weight: bold;
-		  color: white;
-		  text-shadow: 
-			2px 2px 0px black, 
-			-2px -2px 0px black, 
-			2px -2px 0px black, 
-			-2px 2px 0px black;
+		:root {
+		  --primary-blue: #5B9BD5;
+		  --secondary-blue: #4A8BC2;
+		  --light-blue: #F5F9FF;
+		  --ultra-light-blue: #FAFCFF;
+		  --accent-blue: #3498db;
+		  --hover-blue: #2980b9;
 		}
-	  </style>
-	  <style>
+
+		body {
+		  background-color: var(--ultra-light-blue);
+		}
+
+		/* Modern Card Styling */
+		.card {
+		  background: white;
+		  border: none;
+		  border-radius: 12px;
+		  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover {
+		  transform: translateY(-10px);
+		  box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+		}
+
+		.card-body {
+		  padding: 2rem;
+		}
+
+		.text-primary {
+		  color: var(--accent-blue) !important;
+		}
+
+		/* Protocol Cards Icons */
+		.icon-circle {
+		  width: 50px;
+		  height: 50px;
+		  border-radius: 50%;
+		  background: var(--accent-blue);
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  color: white;
+		  margin-right: 1rem;
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover .icon-circle {
+		  transform: rotate(360deg);
+		  background: var(--hover-blue);
+		}
+
 		/* Add smooth scroll behavior */
 		html {
 		  scroll-behavior: smooth;
@@ -47,7 +90,167 @@
 		  height: 70px; /* Same as navbar height */
 		  margin: -70px 0 0;
 		}
-    
+    :root {
+        --primary-blue: #5B9BD5;
+        --secondary-blue: #4A8BC2;
+        --light-blue: #F5F9FF;
+        --ultra-light-blue: #FAFCFF;
+        --accent-blue: #3498db;
+        --hover-blue: #2980b9;
+      }
+
+      body {
+        background-color: var(--ultra-light-blue);
+      }
+
+      .bg-top.navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar.ftco-navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 8px rgba(91, 155, 213, 0.1);
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        color: #333 !important;
+        font-weight: 500;
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+        color: var(--primary-blue) !important;
+      }
+
+      .about-section {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background: var(--light-blue);
+        padding: 5rem 0;
+      }
+
+      .btn-primary {
+        background: var(--primary-blue);
+        border-color: var(--primary-blue);
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background: var(--secondary-blue);
+        border-color: var(--secondary-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(91, 155, 213, 0.2);
+      }
+
+      .services-2 {
+        background: white;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(91, 155, 213, 0.1);
+      }
+
+      #section-counter {
+        background: linear-gradient(rgba(245, 249, 255, 0.95), rgba(245, 249, 255, 0.95)), url(images/11.jpg) !important;
+      }
+
+      .heading-section h2:after {
+        background: var(--primary-blue);
+      }
+
+      .btn-modern {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-modern:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      .icon-modern {
+        font-size: 2.5rem;
+        color: var(--accent-blue);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      .services-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .services-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      
+
+      /* Common spacing adjustments */
+      .ftco-section {
+        padding: 3rem 0;
+        margin: 0;
+      }
+
+      .section-gap {
+        margin-bottom: 2rem;
+      }
+
+      /* Updated button styles for all sections */
+      .btn-common {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-common:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      /* Card styles for all sections */
+      .card-common {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .card-common:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
 	  </style>
   </head>
   <body>
@@ -79,44 +282,42 @@
 		    </div>
 		  </div>
     </div>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center px-4">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="./goalsandvalues.html" class="nav-link">Goals and Values</a></li>
-				<li class="nav-item active"><a href="./cooperation-protocols.html" class="nav-link">Co-operation-Protocols</a></li>
+	  <nav class="navbar navbar-expand-lg navbar-light bg-white ftco-navbar-light shadow-sm sticky-top" id="ftco-navbar">
+	    <div class="container">
+			<a class="navbar-brand d-flex align-items-center" href="index.html">
+			  <img src="images/btu-en-2025.jpg" alt="BSTU Logo" height="40" class="mr-2">
+			  <span>BSTU</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="./goalsandvalues.html" class="nav-link">Goals & Values</a></li>
+				<li class="nav-item active"><a href="./cooperation-protocols.html" class="nav-link">Co-operation Protocols</a></li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Tracks
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="./TracksICT.html">ICT</a>
-						<a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
-						<a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
-						<a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
-					</div>
+				  <a class="nav-link dropdown-toggle" href="#" id="tracksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Tracks
+				  </a>
+				  <div class="dropdown-menu shadow-sm" aria-labelledby="tracksDropdown">
+					<a class="dropdown-item" href="TracksICT.html">ICT</a>
+					<a class="dropdown-item" href="TracksAuto.html">AUTO</a>
+					<a class="dropdown-item" href="TracksMecha.html">Mecha</a>
+					<a class="dropdown-item" href="Tracksreanewable.html">Renewable Energy</a>
+				  </div>
 				</li>
-			</ul>
-	      </div>
+			  </ul>
+			</div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <section class="ftco-section ftco-counter img" id="section-counter" style="background-image: url(images/coo.jpg);" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/coo.jpg');">
+      <div class="overlay" style="background: rgba(0,0,0,0.2);"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread outlined-text">Cooperation Protocols</h1>
-            <p class="breadcrumbs outlined-text">
-              <span class="mr-2"><a href="./index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> 
-              <span>Cooperation Protocols</span>
-            </p>
-          </div>
+          
         </div>
       </div>
     </section>
@@ -136,7 +337,7 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
-                      <i class="icon-graduation-cap h2 mr-3 text-primary"></i>
+                      <div class="icon-circle"><i class="icon-graduation-cap"></i></div>
                       <h4 class="card-title mb-0">Higher Technological Institute Protocol</h4>
                     </div>
                     <p class="card-text">Focuses on providing educational and technological guidance services, developing faculty capabilities, organizing joint conferences, and encouraging collaborative research.</p>
@@ -149,7 +350,7 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
-                      <i class="icon-briefcase h2 mr-3 text-primary"></i>
+                      <div class="icon-circle"><i class="icon-briefcase"></i></div>
                       <h4 class="card-title mb-0">Egypt Workers Association Protocol</h4>
                     </div>
                     <p class="card-text">Collaboration in employment, training, and professional qualification for students across various specializations, supporting distinguished graduation projects.</p>
@@ -162,7 +363,7 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
-                      <i class="icon-shield h2 mr-3 text-primary"></i>
+                      <div class="icon-circle"><i class="icon-shield"></i></div>
                       <h4 class="card-title mb-0">Military Technical College Protocol</h4>
                     </div>
                     <p class="card-text">Aims to qualify military officers with technological bachelor's degrees and facilitate exchange of expertise between institutions.</p>
@@ -175,7 +376,7 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
-                      <i class="icon-atom h2 mr-3 text-primary"></i>
+                      <div class="icon-circle"><i class="icon-atom"></i></div>
                       <h4 class="card-title mb-0">Nuclear Materials Authority Protocol</h4>
                     </div>
                     <p class="card-text">Focuses on research collaboration, technical training, and development of professional certifications in various specialized fields.</p>
@@ -188,7 +389,7 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
-                      <i class="icon-mobile h2 mr-3 text-primary"></i>
+                      <div class="icon-circle"><i class="icon-mobile"></i></div>
                       <h4 class="card-title mb-0">Samsung Cooperation Agreement</h4>
                     </div>
                     <p class="card-text">Provides students with experimental educational opportunities in ICT and mechatronics, including professional training for competitive advantage.</p>
@@ -201,7 +402,7 @@
                 <div class="card h-100">
                   <div class="card-body">
                     <div class="d-flex align-items-center mb-3">
-                      <i class="icon-rocket h2 mr-3 text-primary"></i>
+                      <div class="icon-circle"><i class="icon-rocket"></i></div>
                       <h4 class="card-title mb-0">Egyptian Space Agency Protocol</h4>
                     </div>
                     <p class="card-text">Collaboration in space technology research, specialized laboratory training, and development of joint technology programs.</p>

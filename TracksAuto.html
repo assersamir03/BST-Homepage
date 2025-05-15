@@ -48,22 +48,318 @@
 		  margin: -70px 0 0;
 		}
 	  </style>
-    <style>
-        .nav-pills .nav-link {
-            color: #000;
-            background-color: #f8f9fa;
-            margin: 0 5px;
-            border-radius: 20px;
-        }
+<style>
+      :root {
+        --primary-blue: #5B9BD5;
+        --secondary-blue: #4A8BC2;
+        --light-blue: #F5F9FF;
+        --ultra-light-blue: #FAFCFF;
+        --accent-blue: #3498db;
+        --hover-blue: #2980b9;
+      }
 
-        .nav-pills .nav-link.active {
-            background-color: #007bff;
-            color: white;
-        }
+      body {
+        background-color: var(--ultra-light-blue);
+      }
 
-        .tab-content {
-            padding-top: 30px;
-        }
+      /* Modern table styling */
+      .table {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      }
+
+      .thead-dark {
+        background: var(--accent-blue);
+        color: white;
+      }
+
+      .table-hover tbody tr:hover {
+        background: var(--light-blue);
+        transform: scale(1.01);
+        transition: all 0.3s ease;
+      }
+
+      /* Modern tab styling */
+      .nav-pills .nav-link {
+        color: var(--accent-blue);
+        background: white;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+
+      .nav-pills .nav-link.active {
+        background: var(--accent-blue);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+      }
+
+      .nav-pills .nav-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+      }
+
+      /* Service cards styling */
+      .services {
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        margin: 10px;
+        overflow: hidden;
+      }
+
+      .services:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+      }
+
+      .icon {
+        transition: all 0.3s ease;
+      }
+
+      .services:hover .icon {
+        transform: scale(1.1);
+      }
+
+      /* Override existing styles */
+      .bg-primary {
+        background: var(--accent-blue) !important;
+      }
+
+      .bg-darken {
+        background: var(--primary-blue) !important;
+      }
+      :root {
+		  --primary-blue: #5B9BD5;
+		  --secondary-blue: #4A8BC2;
+		  --light-blue: #F5F9FF;
+		  --ultra-light-blue: #FAFCFF;
+		  --accent-blue: #3498db;
+		  --hover-blue: #2980b9;
+		}
+
+		body {
+		  background-color: var(--ultra-light-blue);
+		}
+
+		/* Modern Card Styling */
+		.card {
+		  background: white;
+		  border: none;
+		  border-radius: 12px;
+		  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover {
+		  transform: translateY(-10px);
+		  box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+		}
+
+		.card-body {
+		  padding: 2rem;
+		}
+
+		.text-primary {
+		  color: var(--accent-blue) !important;
+		}
+
+		/* Protocol Cards Icons */
+		.icon-circle {
+		  width: 50px;
+		  height: 50px;
+		  border-radius: 50%;
+		  background: var(--accent-blue);
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  color: white;
+		  margin-right: 1rem;
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover .icon-circle {
+		  transform: rotate(360deg);
+		  background: var(--hover-blue);
+		}
+
+		/* Add smooth scroll behavior */
+		html {
+		  scroll-behavior: smooth;
+		}
+		
+		/* Offset for fixed navbar */
+		:target::before {
+		  content: "";
+		  display: block;
+		  height: 70px; /* Same as navbar height */
+		  margin: -70px 0 0;
+		}
+    :root {
+        --primary-blue: #5B9BD5;
+        --secondary-blue: #4A8BC2;
+        --light-blue: #F5F9FF;
+        --ultra-light-blue: #FAFCFF;
+        --accent-blue: #3498db;
+        --hover-blue: #2980b9;
+      }
+
+      body {
+        background-color: var(--ultra-light-blue);
+      }
+
+      .bg-top.navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar.ftco-navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 8px rgba(91, 155, 213, 0.1);
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        color: #333 !important;
+        font-weight: 500;
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+        color: var(--primary-blue) !important;
+      }
+
+      .about-section {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background: var(--light-blue);
+        padding: 5rem 0;
+      }
+
+      .btn-primary {
+        background: var(--primary-blue);
+        border-color: var(--primary-blue);
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background: var(--secondary-blue);
+        border-color: var(--secondary-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(91, 155, 213, 0.2);
+      }
+
+      .services-2 {
+        background: white;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(91, 155, 213, 0.1);
+      }
+
+      #section-counter {
+        background: linear-gradient(rgba(245, 249, 255, 0.95), rgba(245, 249, 255, 0.95)), url(images/11.jpg) !important;
+      }
+
+      .heading-section h2:after {
+        background: var(--primary-blue);
+      }
+
+      .btn-modern {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-modern:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      .icon-modern {
+        font-size: 2.5rem;
+        color: var(--accent-blue);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      .services-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .services-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      
+
+      /* Common spacing adjustments */
+      .ftco-section {
+        padding: 3rem 0;
+        margin: 0;
+      }
+
+      .section-gap {
+        margin-bottom: 2rem;
+      }
+
+      /* Updated button styles for all sections */
+      .btn-common {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-common:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      /* Card styles for all sections */
+      .card-common {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .card-common:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
     </style>
   </head>
   <body>
@@ -148,9 +444,9 @@
     </section>
     
     <section class="ftco-services ftco-no-pb">
-        <div class="container-wrap">
-            <div class="row no-gutters">
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+    <div class="container-wrap" style="overflow-x: auto;">
+        <div class="row no-gutters d-flex flex-nowrap">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-teacher"></span>
@@ -161,7 +457,7 @@
                 </div>
               </div>      
             </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-reading"></span>
@@ -172,7 +468,7 @@
                 </div>
               </div>    
             </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-books"></span>
@@ -183,7 +479,7 @@
                 </div>
               </div>      
             </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-diploma"></span>
@@ -194,9 +490,9 @@
                 </div>
               </div>      
             </div>
-          </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
         <div class="container">

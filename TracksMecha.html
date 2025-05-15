@@ -34,6 +34,135 @@
 			-2px 2px 0px black;
 		}
 	  </style>
+      <style>
+      :root {
+        --primary-blue: #5B9BD5;
+        --secondary-blue: #4A8BC2;
+        --light-blue: #F5F9FF;
+        --ultra-light-blue: #FAFCFF;
+        --accent-blue: #3498db;
+        --hover-blue: #2980b9;
+      }
+
+      body {
+        background-color: var(--ultra-light-blue);
+      }
+
+      /* Modern table styling */
+      .table {
+        background: white;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      }
+
+      .thead-dark {
+        background: var(--accent-blue);
+        color: white;
+      }
+
+      .table-hover tbody tr:hover {
+        background: var(--light-blue);
+        transform: scale(1.01);
+        transition: all 0.3s ease;
+      }
+
+      /* Modern tab styling */
+      .nav-pills .nav-link {
+        color: var(--accent-blue);
+        background: white;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+
+      .nav-pills .nav-link.active {
+        background: var(--accent-blue);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+      }
+
+      .nav-pills .nav-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+      }
+
+      /* Service cards styling */
+      .services {
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        margin: 10px;
+        overflow: hidden;
+      }
+
+      .services:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+      }
+
+      .icon {
+        transition: all 0.3s ease;
+      }
+
+      .services:hover .icon {
+        transform: scale(1.1);
+      }
+
+      /* Override existing styles */
+      .bg-primary {
+        background: var(--accent-blue) !important;
+      }
+
+      .bg-darken {
+        background: var(--primary-blue) !important;
+      }
+
+      /* Common spacing and UI elements */
+      .btn-modern {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-modern:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      .card-common {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .card-common:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .ftco-section {
+        padding: 3rem 0;
+        margin: 0;
+      }
+
+      .section-gap {
+        margin-bottom: 2rem;
+      }
+    </style>
 	  <style>
 		/* Add smooth scroll behavior */
 		html {
@@ -148,9 +277,9 @@
     </section>
     
     <section class="ftco-services ftco-no-pb">
-        <div class="container-wrap">
-            <div class="row no-gutters">
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+    <div class="container-wrap" style="overflow-x: auto;">
+        <div class="row no-gutters d-flex flex-nowrap">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-teacher"></span>
@@ -161,7 +290,7 @@
                 </div>
               </div>      
             </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-reading"></span>
@@ -172,7 +301,7 @@
                 </div>
               </div>    
             </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-books"></span>
@@ -183,7 +312,7 @@
                 </div>
               </div>      
             </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken" style="min-width: 300px;">
               <div class="media block-6 d-block text-center">
                 <div class="icon d-flex justify-content-center align-items-center">
                       <span class="flaticon-diploma"></span>
@@ -194,9 +323,9 @@
                 </div>
               </div>      
             </div>
-          </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
         <div class="container">

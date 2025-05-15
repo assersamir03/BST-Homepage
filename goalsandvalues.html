@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>BSTU - Home</title>
-	<link rel="icon" href="images/btu-en-2025.jpg">
+    <link rel="icon" href="images/btu-en-2025.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -22,172 +22,395 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	
-	<style>
-		.outlined-text {
-		  font-weight: bold;
-		  color: white;
-		  text-shadow: 
-			2px 2px 0px black, 
-			-2px -2px 0px black, 
-			2px -2px 0px black, 
-			-2px 2px 0px black;
-		}
-	  </style>
-	  <style>
-		/* Add smooth scroll behavior */
-		html {
-		  scroll-behavior: smooth;
-		}
-		
-		/* Offset for fixed navbar */
-		:target::before {
-		  content: "";
-		  display: block;
-		  height: 70px; /* Same as navbar height */
-		  margin: -70px 0 0;
-		}
-	  </style>
+    
+    <style>
+      :root {
+        --primary-blue: #5B9BD5;
+        --secondary-blue: #4A8BC2;
+        --light-blue: #F5F9FF;
+        --ultra-light-blue: #FAFCFF;
+        --accent-blue: #3498db;
+        --hover-blue: #2980b9;
+      }
+
+      body {
+        background-color: var(--ultra-light-blue);
+      }
+
+      .goals-section {
+        background: var(--light-blue);
+        padding: 5rem 0;
+      }
+
+      .value-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: none;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      }
+
+      .value-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+      }
+
+      .value-icon {
+        font-size: 2.5rem;
+        color: var(--accent-blue);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      .value-card:hover .value-icon {
+        transform: rotate(360deg);
+        color: var(--hover-blue);
+      }
+
+      .goals-list li {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background: white;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      }
+
+      .goals-list li:hover {
+        transform: translateX(10px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+      }
+
+      .goals-list .icon-check {
+        color: var(--accent-blue);
+      }
+      :root {
+        --primary-blue: #5B9BD5;
+        --secondary-blue: #4A8BC2;
+        --light-blue: #F5F9FF;
+        --ultra-light-blue: #FAFCFF;
+        --accent-blue: #3498db;
+        --hover-blue: #2980b9;
+      }
+
+      body {
+        background-color: var(--ultra-light-blue);
+      }
+
+      .bg-top.navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar.ftco-navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 8px rgba(91, 155, 213, 0.1);
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        color: #333 !important;
+        font-weight: 500;
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+        color: var(--primary-blue) !important;
+      }
+
+      .about-section {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background: var(--light-blue);
+        padding: 5rem 0;
+      }
+
+      .btn-primary {
+        background: var(--primary-blue);
+        border-color: var(--primary-blue);
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background: var(--secondary-blue);
+        border-color: var(--secondary-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(91, 155, 213, 0.2);
+      }
+
+      .services-2 {
+        background: white;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(91, 155, 213, 0.1);
+      }
+
+      #section-counter {
+        background: linear-gradient(rgba(245, 249, 255, 0.95), rgba(245, 249, 255, 0.95)), url(images/11.jpg) !important;
+      }
+
+      .heading-section h2:after {
+        background: var(--primary-blue);
+      }
+
+      .btn-modern {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-modern:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      .icon-modern {
+        font-size: 2.5rem;
+        color: var(--accent-blue);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      .services-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .services-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      .universe-section {
+        padding: 4rem 0 2rem 0;
+        background: linear-gradient(135deg, var(--light-blue) 0%, white 100%);
+      }
+
+      .universe-card {
+        margin-bottom: 2rem;
+      }
+
+      .universe-icon {
+        width: 60px;
+        height: 60px;
+        background: var(--accent-blue);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1.5rem;
+        color: white;
+        font-size: 1.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .universe-card:hover .universe-icon {
+        transform: rotate(360deg);
+        background: var(--hover-blue);
+      }
+
+      /* Common spacing adjustments */
+      .ftco-section {
+        padding: 3rem 0;
+        margin: 0;
+      }
+
+      .section-gap {
+        margin-bottom: 2rem;
+      }
+
+      /* Updated button styles for all sections */
+      .btn-common {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-common:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      /* Card styles for all sections */
+      .card-common {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .card-common:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+    </style>
   </head>
   <body>
-	  <div class="bg-top navbar-light">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
-    			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="./index.html">BSTU. <span>Beni Suief Technological University</span></a>
-    			</div>
-	    		<div class="col-lg-8 d-block">
-		    		<div class="row d-flex">
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-					    	<div class="text">
-					    		<span>Email</span>
-						    	<span>info@btu.edu.eg</span>
-						    </div>
-					    </div>
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <div class="text">
-						    	<span>Call</span>
-						    	<span>Contact Us:   0822066651</span>
-						    </div>
-					    </div>
-					    
-				    </div>
-			    </div>
-		    </div>
-		  </div>
-    </div>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center px-4">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-				<li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-				<li class="nav-item active"><a href="./goalsandvalues.html" class="nav-link">Goals and Values</a></li>
-				<li class="nav-item"><a href="./cooperation-protocols.html" class="nav-link">Co-operation-Protocols</a></li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Tracks
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="./TracksICT.html">ICT</a>
-						<a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
-						<a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
-						<a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
-					</div>
-				</li>
-			</ul>
-	      </div>
-	    </div>
-	  </nav>
-    <!-- END nav -->
-    
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/11.jpg');">
-      <div class="overlay"></div>
+    <div class="bg-top navbar-light">
       <div class="container">
-        <div class="row no-gutters slider-text align-items-center justify-content-center">
-          <div class="col-md-9 ftco-animate text-center">
-            <h1 class="outlined-text">Goals and Values</h1>
-            <p class="outlined-text"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Goals and Values</span></p>
+        <div class="row no-gutters d-flex align-items-center align-items-stretch">
+          <div class="col-md-4 d-flex align-items-center py-4">
+            <a class="navbar-brand" href="./index.html">BSTU. <span>Beni Suief Technological University</span></a>
+          </div>
+          <div class="col-lg-8 d-block">
+            <div class="row d-flex">
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                <div class="text">
+                  <span>Email</span>
+                  <span>info@btu.edu.eg</span>
+                </div>
+              </div>
+              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                <div class="text">
+                  <span>Call</span>
+                  <span>Contact Us: 0822066651</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white ftco-navbar-light shadow-sm sticky-top" id="ftco-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/btu-en-2025.jpg" alt="BSTU Logo" height="40" class="mr-2">
+          <span>BSTU</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item active"><a href="./goalsandvalues.html" class="nav-link">Goals & Values</a></li>
+            <li class="nav-item"><a href="./cooperation-protocols.html" class="nav-link">Co-operation Protocols</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="tracksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Tracks
+              </a>
+              <div class="dropdown-menu shadow-sm" aria-labelledby="tracksDropdown">
+                <a class="dropdown-item" href="TracksICT.html">ICT</a>
+                <a class="dropdown-item" href="TracksAuto.html">AUTO</a>
+                <a class="dropdown-item" href="TracksMecha.html">Mecha</a>
+                <a class="dropdown-item" href="Tracksreanewable.html">Renewable Energy</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/11.jpg');">
+      <div class="overlay" style="background: rgba(0,0,0,0.2);"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center justify-content-center">
+         
+        </div>
+      </div>
     </section>
-		
     <section class="ftco-section ftco-no-pt ftc-no-pb">
       <div class="container">
         <div class="row">
           <div class="col-md-12 wrap-about py-5 pr-md-4 ftco-animate">
-            <h2 class="mb-4">Our Mission</h2>
+            <h2 class="mb-4" style="color: var(--primary-blue);">Our Mission</h2>
             <p>To provide high-quality technological education that prepares students for the demands of the modern workforce while fostering innovation and sustainable development in Egypt.</p>
-
-            <h3 class="mt-5 mb-4">Strategic Goals</h3>
+            <h3 class="mt-5 mb-4" style="color: var(--secondary-blue);">Strategic Goals</h3>
             <div class="row">
               <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Establish an integrated path for applied and technological education parallel to academic education</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Implement technology for societal benefit and qualify graduates to meet labor market needs</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Provide high-quality educational services comparable to global standards</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Prepare technologists capable of continuous learning and career flexibility</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Establish strategic partnerships with educational institutions</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Foster public-private sector participation in technical education</li>
+                <ul class="list-unstyled goals-list">
+                  <li><i class="icon-check mr-2"></i> Establish an integrated path for applied and technological education parallel to academic education</li>
+                  <li><i class="icon-check mr-2"></i> Implement technology for societal benefit and qualify graduates to meet labor market needs</li>
+                  <li><i class="icon-check mr-2"></i> Provide high-quality educational services comparable to global standards</li>
+                  <li><i class="icon-check mr-2"></i> Prepare technologists capable of continuous learning and career flexibility</li>
+                  <li><i class="icon-check mr-2"></i> Establish strategic partnerships with educational institutions</li>
+                  <li><i class="icon-check mr-2"></i> Foster public-private sector participation in technical education</li>
                 </ul>
               </div>
               <div class="col-md-6">
-                <ul class="list-unstyled">
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Provide technical and administrative consulting services</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Join international educational organizations and bodies</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Contribute to educational policy development</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Support institutions through consultations and technical assistance</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Conduct labor market research and needs assessment</li>
-                  <li class="mb-3"><i class="icon-check mr-2"></i> Enable graduates to compete in global job markets</li>
+                <ul class="list-unstyled goals-list">
+                  <li><i class="icon-check mr-2"></i> Provide technical and administrative consulting services</li>
+                  <li><i class="icon-check mr-2"></i> Join international educational organizations and bodies</li>
+                  <li><i class="icon-check mr-2"></i> Contribute to educational policy development</li>
+                  <li><i class="icon-check mr-2"></i> Support institutions through consultations and technical assistance</li>
+                  <li><i class="icon-check mr-2"></i> Conduct labor market research and needs assessment</li>
+                  <li><i class="icon-check mr-2"></i> Enable graduates to compete in global job markets</li>
                 </ul>
               </div>
             </div>
-
-            <h3 class="mt-5 mb-4">Core Values</h3>
+            <h3 class="mt-5 mb-4" style="color: var(--secondary-blue);">Core Values</h3>
             <div class="row">
               <div class="col-md-4 mb-4">
-                <div class="text-center p-4 bg-light rounded">
-                  <span class="icon-shield display-4 mb-3"></span>
+                <div class="value-card text-center">
+                  <i class="fas fa-shield-alt value-icon"></i>
                   <h4>Ethics & Integrity</h4>
                   <p>Maintaining high ethical standards with transparency and accountability</p>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
-                <div class="text-center p-4 bg-light rounded">
-                  <span class="icon-users display-4 mb-3"></span>
+                <div class="value-card text-center">
+                  <i class="fas fa-users value-icon"></i>
                   <h4>Leadership & Teamwork</h4>
                   <p>Fostering collaborative leadership and effective team dynamics</p>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
-                <div class="text-center p-4 bg-light rounded">
-                  <span class="icon-refresh display-4 mb-3"></span>
+                <div class="value-card text-center">
+                  <i class="fas fa-lightbulb value-icon"></i>
                   <h4>Innovation & Sustainability</h4>
                   <p>Promoting innovative solutions and sustainable practices</p>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
-                <div class="text-center p-4 bg-light rounded">
-                  <span class="icon-book display-4 mb-3"></span>
+                <div class="value-card text-center">
+                  <i class="fas fa-book value-icon"></i>
                   <h4>Intellectual Property</h4>
                   <p>Respecting and protecting intellectual property rights</p>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
-                <div class="text-center p-4 bg-light rounded">
-                  <span class="icon-balance-scale display-4 mb-3"></span>
+                <div class="value-card text-center">
+                  <i class="fas fa-balance-scale value-icon"></i>
                   <h4>Fairness & Equality</h4>
                   <p>Ensuring equal opportunities and fair treatment for all</p>
                 </div>
               </div>
               <div class="col-md-4 mb-4">
-                <div class="text-center p-4 bg-light rounded">
-                  <span class="icon-globe display-4 mb-3"></span>
+                <div class="value-card text-center">
+                  <i class="fas fa-globe value-icon"></i>
                   <h4>Diversity & Openness</h4>
                   <p>Embracing diversity and maintaining open collaboration</p>
                 </div>
@@ -197,7 +420,6 @@
         </div>
       </div>
     </section>
-
     <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
@@ -223,9 +445,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
-            <div class="ftco-footer-widget mb-5">
-              
-            </div>
+            
           </div>
         </div>
         <div class="row">
