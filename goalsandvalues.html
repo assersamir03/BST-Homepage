@@ -24,6 +24,48 @@
     <link rel="stylesheet" href="css/style.css">
     
     <style>
+		.outlined-text {
+		  font-weight: bold;
+		  color: white;
+		  text-shadow: 
+			2px 2px 0px black, 
+			-2px -2px 0px black, 
+			2px -2px 0px black, 
+			-2px 2px 0px black;
+		}
+	  </style>
+	  <style>
+		/* Add smooth scroll behavior */
+		html {
+		  scroll-behavior: smooth;
+		}
+		
+		/* Offset for fixed navbar */
+		:target::before {
+		  content: "";
+		  display: block;
+		  height: 70px; /* Same as navbar height */
+		  margin: -70px 0 0;
+		}
+	  </style>
+    <style>
+        .nav-pills .nav-link {
+            color: #000;
+            background-color: #f8f9fa;
+            margin: 0 5px;
+            border-radius: 20px;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .tab-content {
+            padding-top: 30px;
+        }
+    </style>
+<style>
       :root {
         --primary-blue: #5B9BD5;
         --secondary-blue: #4A8BC2;
@@ -37,57 +79,144 @@
         background-color: var(--ultra-light-blue);
       }
 
-      .goals-section {
-        background: var(--light-blue);
-        padding: 5rem 0;
-      }
-
-      .value-card {
+      /* Modern table styling */
+      .table {
         background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        height: 100%;
-        transition: all 0.3s ease;
-        border: none;
+        border-radius: 8px;
+        overflow: hidden;
         box-shadow: 0 5px 15px rgba(0,0,0,0.05);
       }
 
-      .value-card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+      .thead-dark {
+        background: var(--accent-blue);
+        color: white;
       }
 
-      .value-icon {
-        font-size: 2.5rem;
-        color: var(--accent-blue);
-        margin-bottom: 1.5rem;
-        display: inline-block;
+      .table-hover tbody tr:hover {
+        background: var(--light-blue);
+        transform: scale(1.01);
         transition: all 0.3s ease;
       }
 
-      .value-card:hover .value-icon {
-        transform: rotate(360deg);
-        color: var(--hover-blue);
-      }
-
-      .goals-list li {
-        padding: 1rem;
-        margin-bottom: 1rem;
+      /* Modern tab styling */
+      .nav-pills .nav-link {
+        color: var(--accent-blue);
         background: white;
-        border-radius: 8px;
+        border-radius: 30px;
+        padding: 10px 20px;
+        margin: 0 5px;
         transition: all 0.3s ease;
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
       }
 
-      .goals-list li:hover {
-        transform: translateX(10px);
-        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.1);
+      .nav-pills .nav-link.active {
+        background: var(--accent-blue);
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
       }
 
-      .goals-list .icon-check {
-        color: var(--accent-blue);
+      .nav-pills .nav-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+      }
+
+      /* Service cards styling */
+      .services {
+        transition: all 0.3s ease;
+        border-radius: 12px;
+        margin: 10px;
+        overflow: hidden;
+      }
+
+      .services:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+      }
+
+      .icon {
+        transition: all 0.3s ease;
+      }
+
+      .services:hover .icon {
+        transform: scale(1.1);
+      }
+
+      /* Override existing styles */
+      .bg-primary {
+        background: var(--accent-blue) !important;
+      }
+
+      .bg-darken {
+        background: var(--primary-blue) !important;
       }
       :root {
+		  --primary-blue: #5B9BD5;
+		  --secondary-blue: #4A8BC2;
+		  --light-blue: #F5F9FF;
+		  --ultra-light-blue: #FAFCFF;
+		  --accent-blue: #3498db;
+		  --hover-blue: #2980b9;
+		}
+
+		body {
+		  background-color: var(--ultra-light-blue);
+		}
+
+		/* Modern Card Styling */
+		.card {
+		  background: white;
+		  border: none;
+		  border-radius: 12px;
+		  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover {
+		  transform: translateY(-10px);
+		  box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+		}
+
+		.card-body {
+		  padding: 2rem;
+		}
+
+		.text-primary {
+		  color: var(--accent-blue) !important;
+		}
+
+		/* Protocol Cards Icons */
+		.icon-circle {
+		  width: 50px;
+		  height: 50px;
+		  border-radius: 50%;
+		  background: var(--accent-blue);
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  color: white;
+		  margin-right: 1rem;
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover .icon-circle {
+		  transform: rotate(360deg);
+		  background: var(--hover-blue);
+		}
+
+		/* Add smooth scroll behavior */
+		html {
+		  scroll-behavior: smooth;
+		}
+		
+		/* Offset for fixed navbar */
+		:target::before {
+		  content: "";
+		  display: block;
+		  height: 70px; /* Same as navbar height */
+		  margin: -70px 0 0;
+		}
+    :root {
         --primary-blue: #5B9BD5;
         --secondary-blue: #4A8BC2;
         --light-blue: #F5F9FF;
@@ -202,33 +331,7 @@
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
 
-      .universe-section {
-        padding: 4rem 0 2rem 0;
-        background: linear-gradient(135deg, var(--light-blue) 0%, white 100%);
-      }
-
-      .universe-card {
-        margin-bottom: 2rem;
-      }
-
-      .universe-icon {
-        width: 60px;
-        height: 60px;
-        background: var(--accent-blue);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 auto 1.5rem;
-        color: white;
-        font-size: 1.5rem;
-        transition: all 0.3s ease;
-      }
-
-      .universe-card:hover .universe-icon {
-        transform: rotate(360deg);
-        background: var(--hover-blue);
-      }
+      
 
       /* Common spacing adjustments */
       .ftco-section {
@@ -274,65 +377,176 @@
         transform: translateY(-5px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
+
+      /* Modern Navbar Styling */
+.main-navbar {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar {
+  background: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.top-bar-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #555;
+}
+
+.top-bar-info .icon {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-blue) !important;
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+  color: #666;
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 5px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 15px 20px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active .nav-link,
+.nav-link:hover {
+  color: var(--accent-blue) !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light-blue);
+  color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    margin: 5px 0;
+  }
+}
     </style>
   </head>
   <body>
-    <div class="bg-top navbar-light">
-      <div class="container">
-        <div class="row no-gutters d-flex align-items-center align-items-stretch">
-          <div class="col-md-4 d-flex align-items-center py-4">
-            <a class="navbar-brand" href="./index.html">BSTU. <span>Beni Suief Technological University</span></a>
-          </div>
-          <div class="col-lg-8 d-block">
-            <div class="row d-flex">
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                <div class="text">
-                  <span>Email</span>
-                  <span>info@btu.edu.eg</span>
-                </div>
-              </div>
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                <div class="text">
-                  <span>Call</span>
-                  <span>Contact Us: 0822066651</span>
-                </div>
-              </div>
-            </div>
+	  <div class="bg-top navbar-light">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
+    			<div class="col-md-4 d-flex align-items-center py-4">
+    				<a class="navbar-brand" href="./index.html">BSTU. <span>Beni Suief Technological University</span></a>
+    			</div>
+	    		<div class="col-lg-8 d-block">
+		    		<div class="row d-flex">
+					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+					    	<div class="text">
+					    		<span>Email</span>
+						    	<span>info@btu.edu.eg</span>
+						    </div>
+					    </div>
+					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
+					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <div class="text">
+						    	<span>Call</span>
+						    	<span>Contact Us:   0822066651</span>
+						    </div>
+					    </div>
+					    
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+	  <div class="main-navbar">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="top-bar-info">
+            <div><span class="icon icon-phone"></span> 0822066651</div>
+            <div><span class="icon icon-envelope"></span> info@btu.edu.eg</div>
           </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white ftco-navbar-light shadow-sm sticky-top" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/btu-en-2025.jpg" alt="BSTU Logo" height="40" class="mr-2">
-          <span>BSTU</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item active"><a href="./goalsandvalues.html" class="nav-link">Goals & Values</a></li>
-            <li class="nav-item"><a href="./cooperation-protocols.html" class="nav-link">Co-operation Protocols</a></li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="tracksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tracks
-              </a>
-              <div class="dropdown-menu shadow-sm" aria-labelledby="tracksDropdown">
-                <a class="dropdown-item" href="TracksICT.html">ICT</a>
-                <a class="dropdown-item" href="TracksAuto.html">AUTO</a>
-                <a class="dropdown-item" href="TracksMecha.html">Mecha</a>
-                <a class="dropdown-item" href="Tracksreanewable.html">Renewable Energy</a>
-              </div>
-            </li>
-          </ul>
-        </div>
+  </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        BSTU <span>Beni Suief Technological University</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./goalsandvalues.html">Goals and Values</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cooperation-protocols.html">Co-operation-Protocols</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              Tracks
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./TracksICT.html">ICT</a>
+              <a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
+              <a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
+              <a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
+            </div>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
+</div>
 
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/11.jpg');">
       <div class="overlay" style="background: rgba(0,0,0,0.2);"></div>

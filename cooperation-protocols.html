@@ -251,66 +251,247 @@
         transform: translateY(-5px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
+
+      /* Modern Navbar Styling */
+.main-navbar {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar {
+  background: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.top-bar-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #555;
+}
+
+.top-bar-info .icon {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-blue) !important;
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+  color: #666;
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 5px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 15px 20px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active .nav-link,
+.nav-link:hover {
+  color: var(--accent-blue) !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light-blue);
+  color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    margin: 5px 0;
+  }
+}
+
+body {
+  padding-top: 140px;
+}
+
+		/* Modern Benefits Section */
+		.benefits-section {
+			padding: 4rem 0;
+			background: var(--light-blue);
+			border-radius: 15px;
+			margin-bottom: 4rem;
+		}
+
+		.benefits-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+			gap: 2rem;
+			padding: 2rem;
+		}
+
+		.benefit-card {
+			background: white;
+			padding: 2rem;
+			border-radius: 12px;
+			text-align: center;
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+		}
+
+		.benefit-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+		}
+
+		.benefit-icon {
+			font-size: 2.5rem;
+			color: var(--accent-blue);
+			margin-bottom: 1.5rem;
+		}
+
+		.benefit-card h4 {
+			color: #333;
+			margin-bottom: 1rem;
+			font-size: 1.3rem;
+		}
+
+		/* Enhanced Protocol Cards */
+		.protocol-cards .card {
+			border: none;
+			border-radius: 15px;
+			overflow: hidden;
+			transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+			box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+		}
+
+		.protocol-cards .card:hover {
+			transform: translateY(-15px) scale(1.02);
+			box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+		}
+
+		.protocol-cards .card-body {
+			padding: 2.5rem;
+		}
+
+		.protocol-cards .card-title {
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: #2c3e50;
+		}
+
+		.protocol-cards .card-text {
+			font-size: 1.1rem;
+			line-height: 1.6;
+			color: #555;
+		}
+
+		.protocol-cards .icon-circle {
+			width: 60px;
+			height: 60px;
+			background: var(--accent-blue);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-right: 1.5rem;
+			transition: transform 0.4s ease;
+		}
+
+		.protocol-cards .icon-circle i {
+			color: white;
+			font-size: 1.5rem;
+		}
+
+		.protocol-cards .card:hover .icon-circle {
+			transform: rotate(360deg) scale(1.1);
+			background: var(--hover-blue);
+		}
 	  </style>
   </head>
   <body>
-	  <div class="bg-top navbar-light">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
-    			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="./index.html">BSTU. <span>Beni Suief Technological University</span></a>
-    			</div>
-	    		<div class="col-lg-8 d-block">
-		    		<div class="row d-flex">
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-					    	<div class="text">
-					    		<span>Email</span>
-						    	<span>info@btu.edu.eg</span>
-						    </div>
-					    </div>
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-						    <div class="text">
-						    	<span>Call</span>
-						    	<span>Contact Us:   0822066651</span>
-						    </div>
-					    </div>
-					    
-				    </div>
-			    </div>
-		    </div>
-		  </div>
+	  
+	  <div class="main-navbar">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="top-bar-info">
+            <div><span class="icon icon-phone"></span> 0822066651</div>
+            <div><span class="icon icon-envelope"></span> info@btu.edu.eg</div>
+          </div>
+        </div>
+      </div>
     </div>
-	  <nav class="navbar navbar-expand-lg navbar-light bg-white ftco-navbar-light shadow-sm sticky-top" id="ftco-navbar">
-	    <div class="container">
-			<a class="navbar-brand d-flex align-items-center" href="index.html">
-			  <img src="images/btu-en-2025.jpg" alt="BSTU Logo" height="40" class="mr-2">
-			  <span>BSTU</span>
-			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-			  <span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="ftco-nav">
-			  <ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="./goalsandvalues.html" class="nav-link">Goals & Values</a></li>
-				<li class="nav-item active"><a href="./cooperation-protocols.html" class="nav-link">Co-operation Protocols</a></li>
-				<li class="nav-item dropdown">
-				  <a class="nav-link dropdown-toggle" href="#" id="tracksDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					Tracks
-				  </a>
-				  <div class="dropdown-menu shadow-sm" aria-labelledby="tracksDropdown">
-					<a class="dropdown-item" href="TracksICT.html">ICT</a>
-					<a class="dropdown-item" href="TracksAuto.html">AUTO</a>
-					<a class="dropdown-item" href="TracksMecha.html">Mecha</a>
-					<a class="dropdown-item" href="Tracksreanewable.html">Renewable Energy</a>
-				  </div>
-				</li>
-			  </ul>
-			</div>
-	    </div>
-	  </nav>
+  </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        
+        BSTU <span>Beni Suief Technological University</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./goalsandvalues.html">Goals and Values</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cooperation-protocols.html">Co-operation-Protocols</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              Tracks
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./TracksICT.html">ICT</a>
+              <a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
+              <a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
+              <a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
     <!-- END nav -->
     
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/coo.jpg');">
@@ -327,11 +508,44 @@
         <div class="row">
           <div class="col-md-12 ftco-animate">
             <div class="intro-text mb-5">
-              <p>Beni Suef Technological University strives to establish numerous cooperation protocols with various organizations and institutions to enhance joint cooperation and advance technical and technological education. These partnerships aim to develop the university's scientific and cultural relationships with all institutions to strengthen scientific cooperation and exchange expertise, ensuring the achievement of desired goals to graduate a generation capable of competing in local, regional, and international job markets.</p>
+              <h2 class="text-center mb-4">International Cooperation & Partnerships</h2>
+              <p class="lead text-center mb-5">Beni Suef Technological University strives to establish numerous cooperation protocols with various organizations and institutions to enhance joint cooperation and advance technical and technological education.</p>
             </div>
 
-            <!-- Protocol Cards -->
-            <div class="row">
+            <!-- Benefits Section -->
+            <div class="benefits-section mb-5">
+              <div class="row">
+                <div class="col-md-12 mb-4">
+                  <h3 class="text-center mb-4">Benefits of Our Partnerships</h3>
+                  <div class="benefits-grid">
+                    <div class="benefit-card">
+                      <div class="benefit-icon">
+                        <i class="icon-rocket"></i>
+                      </div>
+                      <h4>Innovation & Research</h4>
+                      <p>Access to cutting-edge research facilities and collaborative innovation opportunities</p>
+                    </div>
+                    <div class="benefit-card">
+                      <div class="benefit-icon">
+                        <i class="icon-graduation-cap"></i>
+                      </div>
+                      <h4>Student Development</h4>
+                      <p>Enhanced learning opportunities and practical industry experience</p>
+                    </div>
+                    <div class="benefit-card">
+                      <div class="benefit-icon">
+                        <i class="icon-briefcase"></i>
+                      </div>
+                      <h4>Career Opportunities</h4>
+                      <p>Direct pathways to employment and industry connections</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Protocol Cards with updated styling -->
+            <div class="row protocol-cards">
               <!-- Higher Technological Institute Protocol -->
               <div class="col-md-6 mb-4">
                 <div class="card h-100">
@@ -436,8 +650,8 @@
               <div class="ftco-footer-widget mb-5">
                 <h2 class="ftco-heading-2">Follow Us</h2>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                  <li class="ftco-animate"><a href="https://www.facebook.com/people/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9-Beni-Suef-Technological-University/100063584836266/"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="https://www.linkedin.com/posts/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9-020661262_beni-suef-technological-universityofficial-activity-7158029685212229633-Evl8/"><span class="icon-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.facebook.com/people/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-Beni-Suef-Technological-University/100063584836266/"><span class="icon-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.linkedin.com/posts/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-020661262_beni-suef-technological-universityofficial-activity-7158029685212229633-Evl8/"><span class="icon-linkedin"></span></a></li>
                 </ul>
               </div>
             </div>

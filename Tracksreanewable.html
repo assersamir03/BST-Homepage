@@ -377,6 +377,96 @@
         transform: translateY(-5px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
+
+      /* Modern Navbar Styling */
+.main-navbar {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar {
+  background: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.top-bar-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #555;
+}
+
+.top-bar-info .icon {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-blue) !important;
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+  color: #666;
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 5px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 15px 20px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active .nav-link,
+.nav-link:hover {
+  color: var(--accent-blue) !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light-blue);
+  color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    margin: 5px 0;
+  }
+}
     </style>
   </head>
   <body>
@@ -408,31 +498,55 @@
 		    </div>
 		  </div>
     </div>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center px-4">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-				<li class="nav-item "><a href="./index.html" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="./goalsandvalues.html" class="nav-link">Goals and Values</a></li>
-				<li class="nav-item"><a href="./cooperation-protocols.html" class="nav-link">Co-operation-Protocols</a></li>
-				<li class="nav-item dropdown active">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Tracks
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="./TracksICT.html">ICT</a>
-						<a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
-						<a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
-						<a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
-					</div>
-				</li>
-			</ul>
-	      </div>
-	    </div>
-	  </nav>
+	  <div class="main-navbar">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="top-bar-info">
+            <div><span class="icon icon-phone"></span> 0822066651</div>
+            <div><span class="icon icon-envelope"></span> info@btu.edu.eg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        BSTU <span>Beni Suief Technological University</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./goalsandvalues.html">Goals and Values</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cooperation-protocols.html">Co-operation-Protocols</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              Tracks
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./TracksICT.html">ICT</a>
+              <a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
+              <a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
+              <a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
     <!-- END nav -->
     <section class="home-slider owl-carousel">
         <div class="slider-item" style="background-image:url(images/renewable1.jpg);">
@@ -1199,8 +1313,8 @@
               <div class="ftco-footer-widget mb-5">
                 <h2 class="ftco-heading-2">Follow Us</h2>
                 <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                  <li class="ftco-animate"><a href="https://www.facebook.com/people/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9-Beni-Suef-Technological-University/100063584836266/"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="https://www.linkedin.com/posts/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A9-020661262_beni-suef-technological-universityofficial-activity-7158029685212229633-Evl8/"><span class="icon-linkedin"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.facebook.com/people/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-Beni-Suef-Technological-University/100063584836266/"><span class="icon-facebook"></span></a></li>
+                  <li class="ftco-animate"><a href="https://www.linkedin.com/posts/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-020661262_beni-suef-technological-universityofficial-activity-7158029685212229633-Evl8/"><span class="icon-linkedin"></span></a></li>
                 </ul>
               </div>
             </div>

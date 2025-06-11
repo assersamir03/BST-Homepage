@@ -335,65 +335,212 @@
         transform: translateY(-5px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
+
+      .main-navbar {
+        position: relative;
+        z-index: 1000;
+      }
+
+      .top-bar {
+        background: var(--primary-blue);
+        color: white;
+        padding: 10px 0;
+      }
+
+      .top-bar-info {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+
+      .top-bar-info div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .navbar {
+        padding: 0.5rem 1rem;
+        background: white;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar-brand {
+        font-weight: 700;
+        font-size: 1.5rem;
+      }
+
+      .navbar-nav .nav-item .nav-link {
+        padding: 1rem;
+        color: var(--primary-blue);
+        transition: color 0.3s ease;
+      }
+
+      .navbar-nav .nav-item .nav-link:hover {
+        color: var(--hover-blue);
+      }
+
+      .dropdown-menu {
+        border: none;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .dropdown-item {
+        padding: 10px 20px;
+        color: #333;
+        transition: background 0.3s ease;
+      }
+
+      .dropdown-item:hover {
+        background: var(--light-blue);
+      }
+
+      /* Modern Navbar Styling */
+.main-navbar {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar {
+  background: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.top-bar-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #555;
+}
+
+.top-bar-info .icon {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-blue) !important;
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+  color: #666;
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 5px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 15px 20px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active .nav-link,
+.nav-link:hover {
+  color: var(--accent-blue) !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light-blue);
+  color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+/* Add body padding for fixed navbar */
+body {
+  padding-top: 140px;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    margin: 5px 0;
+  }
+}
     </style>
   </head>
   <body>
-    <div class="bg-top navbar-light">
-      <div class="container">
-        <div class="row no-gutters d-flex align-items-center align-items-stretch">
-          <div class="col-md-4 d-flex align-items-center py-4">
-            <a class="navbar-brand" href="./index.html">BSTU. <span>Beni Suief Technological University</span></a>
-          </div>
-          <div class="col-lg-8 d-block">
-            <div class="row d-flex">
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-                <div class="text">
-                  <span>Email</span>
-                  <span>info@btu.edu.eg</span>
-                </div>
-              </div>
-              <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-                <div class="icon d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
-                <div class="text">
-                  <span>Call</span>
-                  <span>Contact Us:   0822066651</span>
-                </div>
+    <div class="main-navbar">
+      <div class="top-bar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <div class="top-bar-info">
+                <div><span class="icon icon-phone"></span> 0822066651</div>
+                <div><span class="icon icon-envelope"></span> info@btu.edu.eg</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white ftco-navbar-light shadow-sm sticky-top" id="ftco-navbar">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-          <img src="images/btu-en-2025.jpg" alt="BSTU Logo" height="40" class="mr-2">
-          <span>BSTU</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
-        </button>
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="./goalsandvalues.html" class="nav-link">Goals and Values</a></li>
-            <li class="nav-item"><a href="./cooperation-protocols.html" class="nav-link">Co-operation-Protocols</a></li>
-            <li class="nav-item dropdown active">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tracks
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="./TracksICT.html">ICT</a>
-                <a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
-                <a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
-                <a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
-              </div>
-            </li>
-          </ul>
+      
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html">
+            BSTU <span>Beni Suief Technological University</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./goalsandvalues.html">Goals and Values</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./cooperation-protocols.html">Co-operation-Protocols</a>
+              </li>
+              <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                  Tracks
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./TracksICT.html">ICT</a>
+                  <a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
+                  <a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
+                  <a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <!-- END nav -->
     <section class="home-slider owl-carousel">
         <div class="slider-item" style="background-image:url(images/software1.jpg);">
@@ -703,102 +850,7 @@
                                                 <td>2</td>
                                             </tr>
                                             <tr>
-                                                <td>Digital Engineering</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Operating System</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Second Year Second Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">Second Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Java Programming I</td>
-                                                <td>3</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>6</td>
-                                                <td>7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Web Programming II</td>
-                                                <td>3</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>6</td>
-                                                <td>7</td>
-                                            </tr>
-                                            <tr>
-                                                <td>CCNA R&S1</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Data Structure</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Database Programming</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Capstone Design</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>6</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Third Year Content -->
-                <div class="tab-pane fade" id="year3" role="tabpanel">
-                    <!-- Track Selector -->
-                    <div class="row mb-4">
+                                                <td>Digital
                         <div class="col-md-12">
                             <ul class="nav nav-pills justify-content-center" id="trackTabs" role="tablist">
                                 <li class="nav-item">

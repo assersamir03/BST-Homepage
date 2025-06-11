@@ -34,7 +34,38 @@
 			-2px 2px 0px black;
 		}
 	  </style>
-      <style>
+	  <style>
+		/* Add smooth scroll behavior */
+		html {
+		  scroll-behavior: smooth;
+		}
+		
+		/* Offset for fixed navbar */
+		:target::before {
+		  content: "";
+		  display: block;
+		  height: 70px; /* Same as navbar height */
+		  margin: -70px 0 0;
+		}
+	  </style>
+    <style>
+        .nav-pills .nav-link {
+            color: #000;
+            background-color: #f8f9fa;
+            margin: 0 5px;
+            border-radius: 20px;
+        }
+
+        .nav-pills .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+        .tab-content {
+            padding-top: 30px;
+        }
+    </style>
+<style>
       :root {
         --primary-blue: #5B9BD5;
         --secondary-blue: #4A8BC2;
@@ -119,8 +150,146 @@
       .bg-darken {
         background: var(--primary-blue) !important;
       }
+      :root {
+		  --primary-blue: #5B9BD5;
+		  --secondary-blue: #4A8BC2;
+		  --light-blue: #F5F9FF;
+		  --ultra-light-blue: #FAFCFF;
+		  --accent-blue: #3498db;
+		  --hover-blue: #2980b9;
+		}
 
-      /* Common spacing and UI elements */
+		body {
+		  background-color: var(--ultra-light-blue);
+		}
+
+		/* Modern Card Styling */
+		.card {
+		  background: white;
+		  border: none;
+		  border-radius: 12px;
+		  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover {
+		  transform: translateY(-10px);
+		  box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
+		}
+
+		.card-body {
+		  padding: 2rem;
+		}
+
+		.text-primary {
+		  color: var(--accent-blue) !important;
+		}
+
+		/* Protocol Cards Icons */
+		.icon-circle {
+		  width: 50px;
+		  height: 50px;
+		  border-radius: 50%;
+		  background: var(--accent-blue);
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  color: white;
+		  margin-right: 1rem;
+		  transition: all 0.3s ease;
+		}
+
+		.card:hover .icon-circle {
+		  transform: rotate(360deg);
+		  background: var(--hover-blue);
+		}
+
+		/* Add smooth scroll behavior */
+		html {
+		  scroll-behavior: smooth;
+		}
+		
+		/* Offset for fixed navbar */
+		:target::before {
+		  content: "";
+		  display: block;
+		  height: 70px; /* Same as navbar height */
+		  margin: -70px 0 0;
+		}
+    :root {
+        --primary-blue: #5B9BD5;
+        --secondary-blue: #4A8BC2;
+        --light-blue: #F5F9FF;
+        --ultra-light-blue: #FAFCFF;
+        --accent-blue: #3498db;
+        --hover-blue: #2980b9;
+      }
+
+      body {
+        background-color: var(--ultra-light-blue);
+      }
+
+      .bg-top.navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      .navbar.ftco-navbar-light {
+        background: white !important;
+        box-shadow: 0 2px 8px rgba(91, 155, 213, 0.1);
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+        color: #333 !important;
+        font-weight: 500;
+      }
+
+      .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
+        color: var(--primary-blue) !important;
+      }
+
+      .about-section {
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background: var(--light-blue);
+        padding: 5rem 0;
+      }
+
+      .btn-primary {
+        background: var(--primary-blue);
+        border-color: var(--primary-blue);
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary:hover {
+        background: var(--secondary-blue);
+        border-color: var(--secondary-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(91, 155, 213, 0.2);
+      }
+
+      .services-2 {
+        background: white;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(91, 155, 213, 0.1);
+      }
+
+      #section-counter {
+        background: linear-gradient(rgba(245, 249, 255, 0.95), rgba(245, 249, 255, 0.95)), url(images/11.jpg) !important;
+      }
+
+      .heading-section h2:after {
+        background: var(--primary-blue);
+      }
+
       .btn-modern {
         background: var(--accent-blue);
         color: white;
@@ -139,6 +308,61 @@
         color: white;
       }
 
+      .icon-modern {
+        font-size: 2.5rem;
+        color: var(--accent-blue);
+        margin-bottom: 1.5rem;
+        display: inline-block;
+        transition: all 0.3s ease;
+      }
+
+      .services-card {
+        background: white;
+        border-radius: 12px;
+        padding: 2rem;
+        height: 100%;
+        transition: all 0.3s ease;
+        border: 1px solid rgba(52, 152, 219, 0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      }
+
+      .services-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      }
+
+      
+
+      /* Common spacing adjustments */
+      .ftco-section {
+        padding: 3rem 0;
+        margin: 0;
+      }
+
+      .section-gap {
+        margin-bottom: 2rem;
+      }
+
+      /* Updated button styles for all sections */
+      .btn-common {
+        background: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 12px 30px;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
+      }
+
+      .btn-common:hover {
+        background: var(--hover-blue);
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        color: white;
+      }
+
+      /* Card styles for all sections */
       .card-common {
         background: white;
         border-radius: 12px;
@@ -154,45 +378,95 @@
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
       }
 
-      .ftco-section {
-        padding: 3rem 0;
-        margin: 0;
-      }
+      /* Modern Navbar Styling */
+.main-navbar {
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
 
-      .section-gap {
-        margin-bottom: 2rem;
-      }
-    </style>
-	  <style>
-		/* Add smooth scroll behavior */
-		html {
-		  scroll-behavior: smooth;
-		}
-		
-		/* Offset for fixed navbar */
-		:target::before {
-		  content: "";
-		  display: block;
-		  height: 70px; /* Same as navbar height */
-		  margin: -70px 0 0;
-		}
-	  </style>
-    <style>
-        .nav-pills .nav-link {
-            color: #000;
-            background-color: #f8f9fa;
-            margin: 0 5px;
-            border-radius: 20px;
-        }
+.top-bar {
+  background: #f8f9fa;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+}
 
-        .nav-pills .nav-link.active {
-            background-color: #007bff;
-            color: white;
-        }
+.top-bar-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #555;
+}
 
-        .tab-content {
-            padding-top: 30px;
-        }
+.top-bar-info .icon {
+  color: var(--accent-blue);
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--accent-blue) !important;
+}
+
+.navbar-brand span {
+  font-size: 1rem;
+  color: #666;
+  display: block;
+}
+
+.nav-item {
+  position: relative;
+  margin: 0 5px;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  padding: 15px 20px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-item.active .nav-link,
+.nav-link:hover {
+  color: var(--accent-blue) !important;
+}
+
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 8px 20px;
+  color: #333;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light-blue);
+  color: var(--accent-blue);
+  transform: translateX(5px);
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-item {
+    margin: 5px 0;
+  }
+}
     </style>
   </head>
   <body>
@@ -224,31 +498,55 @@
 		    </div>
 		  </div>
     </div>
-	  <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container d-flex align-items-center px-4">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav mr-auto">
-				<li class="nav-item "><a href="./index.html" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="./goalsandvalues.html" class="nav-link">Goals and Values</a></li>
-				<li class="nav-item"><a href="./cooperation-protocols.html" class="nav-link">Co-operation-Protocols</a></li>
-				<li class="nav-item dropdown active">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Tracks
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<a class="dropdown-item" href="./TracksICT.html">ICT</a>
-						<a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
-						<a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
-						<a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
-					</div>
-				</li>
-			</ul>
-	      </div>
-	    </div>
-	  </nav>
+	  <div class="main-navbar">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="top-bar-info">
+            <div><span class="icon icon-phone"></span> 0822066651</div>
+            <div><span class="icon icon-envelope"></span> info@btu.edu.eg</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        BSTU <span>Beni Suief Technological University</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./goalsandvalues.html">Goals and Values</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./cooperation-protocols.html">Co-operation-Protocols</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+              Tracks
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="./TracksICT.html">ICT</a>
+              <a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
+              <a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
+              <a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
     <!-- END nav -->
     <section class="home-slider owl-carousel">
         <div class="slider-item" style="background-image:url(images/mechatronics1.jpg);">
