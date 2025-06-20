@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <title>BSTU - Home</title>
-	<link rel="icon" href="images/btu-en-2025.jpg">
+    <link rel="icon" href="images/btu-en-2025.jpg">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -18,1434 +19,1152 @@
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
+
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	
-	<style>
-		.outlined-text {
-		  font-weight: bold;
-		  color: white;
-		  text-shadow: 
-			2px 2px 0px black, 
-			-2px -2px 0px black, 
-			2px -2px 0px black, 
-			-2px 2px 0px black;
-		}
-	  </style>
-	  <style>
-		/* Add smooth scroll behavior */
-		html {
-		  scroll-behavior: smooth;
-		}
-		
-		/* Offset for fixed navbar */
-		:target::before {
-		  content: "";
-		  display: block;
-		  height: 70px; /* Same as navbar height */
-		  margin: -70px 0 0;
-		}
-	  </style>
-    <style>
-        .nav-pills .nav-link {
-            color: #000;
-            background-color: #f8f9fa;
-            margin: 0 5px;
-            border-radius: 20px;
-        }
+    <link rel="stylesheet" href="css/custom-styles.css">
 
-        .nav-pills .nav-link.active {
-            background-color: #007bff;
-            color: white;
-        }
-
-        .tab-content {
-            padding-top: 30px;
-        }
-    </style>
-<style>
-      :root {
-        --primary-blue: #5B9BD5;
-        --secondary-blue: #4A8BC2;
-        --light-blue: #F5F9FF;
-        --ultra-light-blue: #FAFCFF;
-        --accent-blue: #3498db;
-        --hover-blue: #2980b9;
-      }
-
-      body {
-        background-color: var(--ultra-light-blue);
-      }
-
-      /* Modern table styling */
-      .table {
-        background: white;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-      }
-
-      .thead-dark {
-        background: var(--accent-blue);
-        color: white;
-      }
-
-      .table-hover tbody tr:hover {
-        background: var(--light-blue);
-        transform: scale(1.01);
-        transition: all 0.3s ease;
-      }
-
-      /* Modern tab styling */
-      .nav-pills .nav-link {
-        color: var(--accent-blue);
-        background: white;
-        border-radius: 30px;
-        padding: 10px 20px;
-        margin: 0 5px;
-        transition: all 0.3s ease;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-      }
-
-      .nav-pills .nav-link.active {
-        background: var(--accent-blue);
-        color: white;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
-      }
-
-      .nav-pills .nav-link:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
-      }
-
-      /* Service cards styling */
-      .services {
-        transition: all 0.3s ease;
-        border-radius: 12px;
-        margin: 10px;
-        overflow: hidden;
-      }
-
-      .services:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
-      }
-
-      .icon {
-        transition: all 0.3s ease;
-      }
-
-      .services:hover .icon {
-        transform: scale(1.1);
-      }
-
-      /* Override existing styles */
-      .bg-primary {
-        background: var(--accent-blue) !important;
-      }
-
-      .bg-darken {
-        background: var(--primary-blue) !important;
-      }
-      :root {
-		  --primary-blue: #5B9BD5;
-		  --secondary-blue: #4A8BC2;
-		  --light-blue: #F5F9FF;
-		  --ultra-light-blue: #FAFCFF;
-		  --accent-blue: #3498db;
-		  --hover-blue: #2980b9;
-		}
-
-		body {
-		  background-color: var(--ultra-light-blue);
-		}
-
-		/* Modern Card Styling */
-		.card {
-		  background: white;
-		  border: none;
-		  border-radius: 12px;
-		  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-		  transition: all 0.3s ease;
-		}
-
-		.card:hover {
-		  transform: translateY(-10px);
-		  box-shadow: 0 15px 30px rgba(52, 152, 219, 0.15);
-		}
-
-		.card-body {
-		  padding: 2rem;
-		}
-
-		.text-primary {
-		  color: var(--accent-blue) !important;
-		}
-
-		/* Protocol Cards Icons */
-		.icon-circle {
-		  width: 50px;
-		  height: 50px;
-		  border-radius: 50%;
-		  background: var(--accent-blue);
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  color: white;
-		  margin-right: 1rem;
-		  transition: all 0.3s ease;
-		}
-
-		.card:hover .icon-circle {
-		  transform: rotate(360deg);
-		  background: var(--hover-blue);
-		}
-
-		/* Add smooth scroll behavior */
-		html {
-		  scroll-behavior: smooth;
-		}
-		
-		/* Offset for fixed navbar */
-		:target::before {
-		  content: "";
-		  display: block;
-		  height: 70px; /* Same as navbar height */
-		  margin: -70px 0 0;
-		}
-    :root {
-        --primary-blue: #5B9BD5;
-        --secondary-blue: #4A8BC2;
-        --light-blue: #F5F9FF;
-        --ultra-light-blue: #FAFCFF;
-        --accent-blue: #3498db;
-        --hover-blue: #2980b9;
-      }
-
-      body {
-        background-color: var(--ultra-light-blue);
-      }
-
-      .bg-top.navbar-light {
-        background: white !important;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      }
-
-      .navbar.ftco-navbar-light {
-        background: white !important;
-        box-shadow: 0 2px 8px rgba(91, 155, 213, 0.1);
-      }
-
-      .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-        color: #333 !important;
-        font-weight: 500;
-      }
-
-      .ftco-navbar-light .navbar-nav > .nav-item.active > .nav-link {
-        color: var(--primary-blue) !important;
-      }
-
-      .about-section {
-        width: 100vw;
-        position: relative;
-        left: 50%;
-        right: 50%;
-        margin-left: -50vw;
-        margin-right: -50vw;
-        background: var(--light-blue);
-        padding: 5rem 0;
-      }
-
-      .btn-primary {
-        background: var(--primary-blue);
-        border-color: var(--primary-blue);
-        padding: 0.8rem 2rem;
-        border-radius: 30px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-      }
-
-      .btn-primary:hover {
-        background: var(--secondary-blue);
-        border-color: var(--secondary-blue);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(91, 155, 213, 0.2);
-      }
-
-      .services-2 {
-        background: white;
-        border-radius: 12px;
-        transition: all 0.3s ease;
-        border: 1px solid rgba(91, 155, 213, 0.1);
-      }
-
-      #section-counter {
-        background: linear-gradient(rgba(245, 249, 255, 0.95), rgba(245, 249, 255, 0.95)), url(images/11.jpg) !important;
-      }
-
-      .heading-section h2:after {
-        background: var(--primary-blue);
-      }
-
-      .btn-modern {
-        background: var(--accent-blue);
-        color: white;
-        border: none;
-        padding: 12px 30px;
-        border-radius: 8px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
-      }
-
-      .btn-modern:hover {
-        background: var(--hover-blue);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-        color: white;
-      }
-
-      .icon-modern {
-        font-size: 2.5rem;
-        color: var(--accent-blue);
-        margin-bottom: 1.5rem;
-        display: inline-block;
-        transition: all 0.3s ease;
-      }
-
-      .services-card {
-        background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        height: 100%;
-        transition: all 0.3s ease;
-        border: 1px solid rgba(52, 152, 219, 0.1);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      }
-
-      .services-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      
-
-      /* Common spacing adjustments */
-      .ftco-section {
-        padding: 3rem 0;
-        margin: 0;
-      }
-
-      .section-gap {
-        margin-bottom: 2rem;
-      }
-
-      /* Updated button styles for all sections */
-      .btn-common {
-        background: var(--accent-blue);
-        color: white;
-        border: none;
-        padding: 12px 30px;
-        border-radius: 8px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        box-shadow: 0 3px 6px rgba(52, 152, 219, 0.2);
-      }
-
-      .btn-common:hover {
-        background: var(--hover-blue);
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
-        color: white;
-      }
-
-      /* Card styles for all sections */
-      .card-common {
-        background: white;
-        border-radius: 12px;
-        padding: 2rem;
-        height: 100%;
-        transition: all 0.3s ease;
-        border: 1px solid rgba(52, 152, 219, 0.1);
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      }
-
-      .card-common:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-      }
-
-      /* Modern Navbar Styling */
-.main-navbar {
-  width: 100%;
-  background: #ffffff;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-
-.top-bar {
-  background: #f8f9fa;
-  padding: 10px 0;
-  border-bottom: 1px solid #eaeaea;
-}
-
-.top-bar-info {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  color: #555;
-}
-
-.top-bar-info .icon {
-  color: var(--accent-blue);
-  font-size: 1.2rem;
-}
-
-.navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: var(--accent-blue) !important;
-}
-
-.navbar-brand span {
-  font-size: 1rem;
-  color: #666;
-  display: block;
-}
-
-.nav-item {
-  position: relative;
-  margin: 0 5px;
-}
-
-.nav-link {
-  color: #333 !important;
-  font-weight: 500;
-  padding: 15px 20px !important;
-  transition: all 0.3s ease;
-}
-
-.nav-item.active .nav-link,
-.nav-link:hover {
-  color: var(--accent-blue) !important;
-}
-
-.dropdown-menu {
-  border: none;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 10px;
-}
-
-.dropdown-item {
-  padding: 8px 20px;
-  color: #333;
-  border-radius: 5px;
-  transition: all 0.2s ease;
-}
-
-.dropdown-item:hover {
-  background-color: var(--light-blue);
-  color: var(--accent-blue);
-  transform: translateX(5px);
-}
-
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-item {
-    margin: 5px 0;
-  }
-}
-    </style>
-  </head>
-  <body>
-	  <div class="bg-top navbar-light">
-    	<div class="container">
-    		<div class="row no-gutters d-flex align-items-center align-items-stretch">
-    			<div class="col-md-4 d-flex align-items-center py-4">
-    				<a class="navbar-brand" href="./index.html">BSTU. <span>Beni Suief Technological University</span></a>
-    			</div>
-	    		<div class="col-lg-8 d-block">
-		    		<div class="row d-flex">
-					    <div class="col-md d-flex topper align-items-center align-items-stretch py-md-4">
-					    	<div class="icon d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
-					    	<div class="text">
-					    		<span>Email</span>
-						    	<span>info@btu.edu.eg</span>
-						    </div>
-					    </div>
-
-			    </div>
-		    </div>
-		  </div>
-    </div>
-	  <div class="main-navbar">
-  <div class="top-bar">
+</head>
+<body>
+<div class="ultra-modern-topbar">
+    <div class="topbar-background-pattern"></div>
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <div class="top-bar-info">
-            <div><span class="icon icon-phone"></span> 0822066651</div>
-            <div><span class="icon icon-envelope"></span> info@btu.edu.eg</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-      <a class="navbar-brand" href="./index.html">
-        BSTU <span>Beni Suief Technological University</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./goalsandvalues.html">Goals and Values</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./cooperation-protocols.html">Co-operation-Protocols</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-              Tracks
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="./TracksICT.html">ICT</a>
-              <a class="dropdown-item" href="./TracksAuto.html">AUTO</a>
-              <a class="dropdown-item" href="./TracksMecha.html">Mecha</a>
-              <a class="dropdown-item" href="./Tracksreanewable.html">Renewable Energy</a>
+        <div class="topbar-content">
+            <div class="topbar-left">
+                <div class="contact-items">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="icon-phone"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Call Us</span>
+                            <span class="contact-value">+20 82 206 6651</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="icon-envelope"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">info@btu.edu.eg</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="icon-my_location"></i>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Beni Suef, Egypt</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </li>
-        </ul>
-      </div>
+            <div class="topbar-right">
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <i class="icon-linkedin"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="icon-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="YouTube">
+                        <i class="icon-youtube"></i>
+                    </a>
+                </div>
+                <div class="action-buttons">
+                    <a href="https://universe.debuggers.me" class="action-btn student-portal">
+                        <i class="icon-user"></i>
+                        <span>Student Portal</span>
+                    </a>
+                    <a href="#apply" class="action-btn apply-now">
+                        <i class="icon-graduation-cap"></i>
+                        <span>Apply Now</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
 </div>
-    <!-- END nav -->
-    <section class="home-slider owl-carousel">
-        <div class="slider-item" style="background-image:url(images/renewable1.jpg);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-            <div class="col-md-6 ftco-animate">
-              <h1 class="mb-4">Master Renewable Energy Systems</h1>
-              <p class="mb-4">Our program trains professionals in solar photovoltaic technology, wind energy systems, and smart grid integration. Gain hands-on experience in energy storage solutions, microgrid design, and sustainable power generation techniques.</p>
+
+<!-- Ultra-Modern Navbar -->
+<nav class="ultra-modern-navbar">
+    <div class="navbar-container">
+        <div class="container">
+            <div class="navbar-content">
+                <div class="navbar-brand-section">
+                    <a href="./index.html" class="modern-navbar-brand">
+                        <div class="brand-logo-container">
+                                                        <img src="images/logo.png" alt="BSTU Logo" style="height:48px;width:auto;object-fit:contain;">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="navbar-navigation">
+                    <ul class="modern-nav-menu">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link">
+                                <span class="nav-text">Home</span>
+                                <div class="nav-indicator"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./goalsandvalues.html" class="nav-link">
+                                <span class="nav-text">Goals & Values</span>
+                                <div class="nav-indicator"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./cooperation-protocols.html" class="nav-link">
+                                <span class="nav-text">Cooperation</span>
+                                <div class="nav-indicator"></div>
+                            </a>
+                        </li>
+                        <li class="nav-item mega-dropdown active">
+                            <a href="#" class="nav-link dropdown-trigger">
+                                <span class="nav-text">Academic Tracks</span>
+                                <i class="icon-chevron-down dropdown-arrow"></i>
+                                <div class="nav-indicator"></div>
+                            </a>
+                            <div class="mega-dropdown-menu">
+                                <div class="mega-dropdown-content">
+                                    <div class="dropdown-section">
+                                        <h4 class="section-title">Technology Programs</h4>
+                                        <div class="dropdown-items">
+                                            <a href="./TracksICT.html" class="mega-dropdown-item">
+                                                <div class="item-icon">
+                                                    <i class="icon-desktop"></i>
+                                                </div>
+                                                <div class="item-content">
+                                                    <strong class="item-title">Information Technology</strong>
+                                                    <small class="item-description">Software Development &
+                                                        Systems</small>
+                                                </div>
+                                            </a>
+                                            <a href="./TracksAuto.html" class="mega-dropdown-item">
+                                                <div class="item-icon">
+                                                    <i class="icon-settings"></i>
+                                                </div>
+                                                <div class="item-content">
+                                                    <strong class="item-title">Automotive Technology</strong>
+                                                    <small class="item-description">Modern Vehicle Systems</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-section">
+                                        <h4 class="section-title">Engineering Programs</h4>
+                                        <div class="dropdown-items">
+                                            <a href="./TracksMecha.html" class="mega-dropdown-item">
+                                                <div class="item-icon">
+                                                    <i class="icon-cogs"></i>
+                                                </div>
+                                                <div class="item-content">
+                                                    <strong class="item-title">Mechatronics</strong>
+                                                    <small class="item-description">Robotics & Automation</small>
+                                                </div>
+                                            </a>
+                                            <a href="./Tracksreanewable.html" class="mega-dropdown-item">
+                                                <div class="item-icon">
+                                                    <i class="icon-leaf"></i>
+                                                </div>
+                                                <div class="item-content">
+                                                    <strong class="item-title">Renewable Energy</strong>
+                                                    <small class="item-description">Sustainable Technology</small>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-actions">
+                    <button class="search-toggle" aria-label="Search">
+                        <i class="icon-search"></i>
+                    </button>
+                    <button class="mobile-menu-toggle" aria-label="Mobile Menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
             </div>
-          </div>
-          </div>
         </div>
-    
-        <div class="slider-item" style="background-image:url(images/renewable2.jpg);">
-            <div class="overlay"></div>
-          <div class="container">
-            <div class="row no-gutters slider-text align-items-center justify-content-start" data-scrollax-parent="true">
-            <div class="col-md-6 ftco-animate">
-              <h1 class="mb-4">Lead the Energy Transition</h1>
-              <p>Specialize in cutting-edge solutions including green hydrogen production, biomass energy conversion, and AI-driven energy management systems. Master grid-tie installations and renewable energy policy frameworks.</p>
+    </div>
+</nav>
+<!-- END nav -->
+<section class="home-slider owl-carousel">
+    <div class="slider-item" style="background-image:url(images/renewable1.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start"
+                 data-scrollax-parent="true">
+                <div class="col-md-6 ftco-animate">
+                    <h1 class="mb-4">Master Renewable Energy Systems</h1>
+                    <p class="mb-4">Our program trains professionals in solar photovoltaic technology, wind energy
+                        systems, and smart grid integration. Gain hands-on experience in energy storage solutions,
+                        microgrid design, and sustainable power generation techniques.</p>
+                </div>
             </div>
-          </div>
-          </div>
         </div>
-    </section>
-    
-    <section class="ftco-services ftco-no-pb">
-    <div class="container-wrap" style="overflow-x: auto;">
-        <div class="row no-gutters d-flex flex-nowrap">
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary" style="min-width: 300px;">
-              <div class="media block-6 d-block text-center">
-                <div class="icon d-flex justify-content-center align-items-center">
-                      <span class="flaticon-teacher"></span>
+    </div>
+
+    <div class="slider-item" style="background-image:url(images/renewable2.jpg);">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-start"
+                 data-scrollax-parent="true">
+                <div class="col-md-6 ftco-animate">
+                    <h1 class="mb-4">Lead the Energy Transition</h1>
+                    <p>Specialize in cutting-edge solutions including green hydrogen production, biomass energy
+                        conversion, and AI-driven energy management systems. Master grid-tie installations and
+                        renewable energy policy frameworks.</p>
                 </div>
-                <div class="media-body p-2 mt-3">
-                  <h3 class="heading">Certified Energy Experts</h3>
-                  <p>Learn from NABCEP-certified professionals with field experience in utility-scale solar farms and wind energy projects.</p>
-                </div>
-              </div>      
-            </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken" style="min-width: 300px;">
-              <div class="media block-6 d-block text-center">
-                <div class="icon d-flex justify-content-center align-items-center">
-                      <span class="flaticon-reading"></span>
-                </div>
-                <div class="media-body p-2 mt-3">
-                  <h3 class="heading">Field Training</h3>
-                  <p>Practical sessions with solar PV arrays, wind turbine mockups, and energy monitoring systems in our green tech lab.</p>
-                </div>
-              </div>    
-            </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary" style="min-width: 300px;">
-              <div class="media block-6 d-block text-center">
-                <div class="icon d-flex justify-content-center align-items-center">
-                      <span class="flaticon-books"></span>
-                </div>
-                <div class="media-body p-2 mt-3">
-                  <h3 class="heading">Energy Resources</h3>
-                  <p>Access to PVsyst software, wind resource maps, and our renewable energy library with 1000+ technical manuals.</p>
-                </div>
-              </div>      
-            </div>
-            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken" style="min-width: 300px;">
-              <div class="media block-6 d-block text-center">
-                <div class="icon d-flex justify-content-center align-items-center">
-                      <span class="flaticon-diploma"></span>
-                </div>
-                <div class="media-body p-2 mt-3">
-                  <h3 class="heading">Industry Certification</h3>
-                  <p>Earn credentials aligned with IREC standards and prepare for Solar Energy International certification exams.</p>
-                </div>
-              </div>      
             </div>
         </div>
     </div>
 </section>
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
-        <div class="container">
-            <div class="row justify-content-center py-5">
-                <div class="col-md-8 text-center heading-section ftco-animate">
-                    <h2 class="mb-4">What will you learn</h2>
+<section class="ftco-services ftco-no-pb">
+    <div class="container-wrap" style="overflow-x: auto;">
+        <div class="row no-gutters d-flex flex-nowrap">
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary"
+                 style="min-width: 300px;">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-teacher"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Certified Energy Experts</h3>
+                        <p>Learn from NABCEP-certified professionals with field experience in utility-scale solar
+                            farms and wind energy projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken"
+                 style="min-width: 300px;">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-reading"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Field Training</h3>
+                        <p>Practical sessions with solar PV arrays, wind turbine mockups, and energy monitoring
+                            systems in our green tech lab.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-primary"
+                 style="min-width: 300px;">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-books"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Energy Resources</h3>
+                        <p>Access to PVsyst software, wind resource maps, and our renewable energy library with
+                            1000+ technical manuals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex services align-self-stretch py-5 px-4 ftco-animate bg-darken"
+                 style="min-width: 300px;">
+                <div class="media block-6 d-block text-center">
+                    <div class="icon d-flex justify-content-center align-items-center">
+                        <span class="flaticon-diploma"></span>
+                    </div>
+                    <div class="media-body p-2 mt-3">
+                        <h3 class="heading">Industry Certification</h3>
+                        <p>Earn credentials aligned with IREC standards and prepare for Solar Energy International
+                            certification exams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-no-pt ftco-no-pb bg-light">
+    <div class="container">
+        <div class="row justify-content-center py-5">
+            <div class="col-md-8 text-center heading-section ftco-animate">
+                <h2 class="mb-4">What will you learn</h2>
+            </div>
+        </div>
+
+        <!-- Year Selector -->
+        <div class="row mb-4">
+            <div class="col-md-12">
+                <ul class="nav nav-pills justify-content-center" id="yearTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="year1-tab" data-toggle="pill" href="#year1" role="tab">First
+                            Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="year2-tab" data-toggle="pill" href="#year2" role="tab">Second
+                            Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="year3-tab" data-toggle="pill" href="#year3" role="tab">Third
+                            Year</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="year4-tab" data-toggle="pill" href="#year4" role="tab">Fourth
+                            Year</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="yearTabContent">
+            <!-- First Year Content -->
+            <div class="tab-pane fade show active" id="year1" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center mb-4">First Year Curriculum</h3>
+                        <!-- First Year First Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">First Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English I</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mathematics</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Renewable Energy</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CAD for Engineering</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Electrical and Electronic Principles</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Programming using matlab</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- First Year Second Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">Second Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English II</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Farther Mathematics</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mechanical Principles</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Workshop Practices</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Analog and Digital Electronics</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Human Rights</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Health and Safety</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Year Selector -->
-            <div class="row mb-4">
-                <div class="col-md-12">
-                    <ul class="nav nav-pills justify-content-center" id="yearTabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="year1-tab" data-toggle="pill" href="#year1" role="tab">First Year</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="year2-tab" data-toggle="pill" href="#year2" role="tab">Second Year</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="year3-tab" data-toggle="pill" href="#year3" role="tab">Third Year</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="year4-tab" data-toggle="pill" href="#year4" role="tab">Fourth Year</a>
-                        </li>
+            <!-- Second Year Content -->
+            <div class="tab-pane fade" id="year2" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center mb-4">Second Year Curriculum</h3>
+
+                        <!-- Second Year First Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">First Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English III</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>fluid Mechanics
+                                            and
+                                            Turbomachines
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Renewable Energy
+                                            Technology
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Applied Hydraulics
+                                            and Pneumatics
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Applied Dc and Ac
+                                            Machines
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graduation Project - I</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Second Year Second Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">Second Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English IV</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Thermodynamics
+                                            and Heat Transfer
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Electrical
+                                            Inspection
+                                            Processes and
+                                            Procedures
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Installation,
+                                            Maintenance and
+                                            Repair of Small
+                                            RE Systems
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Instrumentation
+                                            and
+                                            Measurements
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graduation Project - II</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Year Content -->
+            <div class="tab-pane fade" id="year3" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center mb-4">Third Year Curriculum</h3>
+
+                        <!-- First Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">First Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English V</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solar Energy and
+                                            Applications
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solar Pumping
+                                            System
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>PV technology and
+                                            Thermal
+                                            Characterization
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Modelling and
+                                            simulation
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Employability
+                                            skills
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>4</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Second Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">Second Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English VI</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Industrial
+                                            Automation
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Transmission and
+                                            Distribution
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Power Electronics
+                                            and Drives
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solar Thermal
+                                            Systems and
+                                            Thermal Storage
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Installation,
+                                            Testing and
+                                            Commissioning of
+                                            on grid and off
+                                            grid PV System
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Year Content -->
+            <div class="tab-pane fade" id="year4" role="tabpanel">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="text-center mb-4">Fourth Year Curriculum</h3>
+
+                        <!-- First Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">First Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English VII</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Electric Power
+                                            Systems
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MLN Unit</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maintenance,
+                                            Troubleshooting
+                                            and repair of PV
+                                            Plants
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>3</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Managing a
+                                            Professional
+                                            Project
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graduation Project - I</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Second Semester -->
+                        <div class="mb-5">
+                            <h4 class="text-primary mb-3">Second Semester</h4>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th>Course</th>
+                                        <th>Credit Score</th>
+                                        <th>Lecture</th>
+                                        <th>Tutorial</th>
+                                        <th>Lab/Workshop</th>
+                                        <th>Total Hours</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>English VIII</td>
+                                        <td>1</td>
+                                        <td>0</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Smart Grid
+                                            Technology
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Power System
+                                            Protection
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MLN Unit</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Energy and
+                                            Building
+                                            Management
+                                            Systems
+                                        </td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Graduation Project - II</td>
+                                        <td>3</td>
+                                        <td>2</td>
+                                        <td>0</td>
+                                        <td>4</td>
+                                        <td>6</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md-6 col-lg-4">
+                <div class="ftco-footer-widget mb-5">
+                    <h2 class="ftco-heading-2">Contact Us</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon icon-map-marker"></span><span class="text">Beni Suef Governorate – Beni Suef City (East) – 1st District</span>
+                            </li>
+                            <li><a href="tel:0822066651"><span class="icon icon-phone"></span><span class="text">0822066651</span></a>
+                            </li>
+                            <li><a href="mailto:info@btu.edu.eg"><span class="icon icon-envelope"></span><span
+                                    class="text">info@btu.edu.eg</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="ftco-footer-widget mb-5">
+                    <h2 class="ftco-heading-2">Follow Us</h2>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
+                        <li class="ftco-animate"><a
+                                href="https://www.facebook.com/people/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-Beni-Suef-Technological-University/100063584836266/"><span
+                                class="icon-facebook"></span></a></li>
+                        <li class="ftco-animate"><a
+                                href="https://www.linkedin.com/posts/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-020661262_beni-suef-technological-universityofficial-activity-7158029685212229633-Evl8/"><span
+                                class="icon-linkedin"></span></a></li>
                     </ul>
                 </div>
             </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="ftco-footer-widget mb-5">
 
-            <!-- Tab Content -->
-            <div class="tab-content" id="yearTabContent">
-                <!-- First Year Content -->
-                <div class="tab-pane fade show active" id="year1" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-center mb-4">First Year Curriculum</h3>
-                            <!-- First Year First Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">First Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English I</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mathematics </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Renewable Energy </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>CAD for Engineering </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Electrical and Electronic Principles</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>6</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Programming using matlab</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- First Year Second Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">Second Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English II</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Farther Mathematics </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Mechanical Principles </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Workshop Practices </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                                <td>6</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Analog and Digital Electronics</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>6</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Human Rights</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Health and Safety </td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>1</td>
-                                                <td>4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Second Year Content -->
-                <div class="tab-pane fade" id="year2" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-center mb-4">Second Year Curriculum</h3>
-                            
-                            <!-- Second Year First Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">First Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English III</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>fluid Mechanics 
-                                                    and 
-                                                    Turbomachines</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Renewable Energy 
-                                                    Technology </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Applied Hydraulics 
-                                                    and Pneumatics </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Applied Dc and Ac 
-                                                    Machines </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Graduation Project - I</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Second Year Second Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">Second Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English IV</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Thermodynamics 
-                                                    and Heat Transfer </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Electrical 
-                                                    Inspection 
-                                                    Processes and 
-                                                    Procedures</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Installation, 
-                                                    Maintenance and 
-                                                    Repair of Small 
-                                                    RE Systems </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Instrumentation 
-                                                    and  
-                                                    Measurements  </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Graduation Project - II</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Third Year Content -->
-                <div class="tab-pane fade" id="year3" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-center mb-4">Third Year Curriculum</h3>
-                            
-                            <!-- First Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">First Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English V</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Solar Energy and 
-                                                    Applications</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Solar Pumping 
-                                                    System</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>PV technology and 
-                                                    Thermal 
-                                                    Characterization</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>1</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Modelling and 
-                                                    simulation </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>1</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Employability 
-                                                    skills  </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>1</td>
-                                                <td>4</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Second Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">Second Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English VI</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Industrial 
-                                                    Automation </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Transmission and 
-                                                    Distribution</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Power Electronics 
-                                                    and Drives </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Solar Thermal 
-                                                    Systems and 
-                                                    Thermal Storage </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Installation, 
-                                                    Testing and 
-                                                    Commissioning of 
-                                                    on grid and off 
-                                                    grid PV System</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Fourth Year Content -->
-                <div class="tab-pane fade" id="year4" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="text-center mb-4">Fourth Year Curriculum</h3>
-                            
-                            <!-- First Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">First Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English VII</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Electric Power 
-                                                    Systems </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>MLN Unit </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Maintenance, 
-                                                    Troubleshooting 
-                                                    and repair of PV 
-                                                    Plants  </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>3</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Managing a 
-                                                    Professional 
-                                                    Project </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Graduation Project - I </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
-                            <!-- Second Semester -->
-                            <div class="mb-5">
-                                <h4 class="text-primary mb-3">Second Semester</h4>
-                                <div class="table-responsive">
-                                    <table class="table table-bordered table-hover">
-                                        <thead class="thead-dark">
-                                            <tr>
-                                                <th>Course</th>
-                                                <th>Credit Score</th>
-                                                <th>Lecture</th>
-                                                <th>Tutorial</th>
-                                                <th>Lab/Workshop</th>
-                                                <th>Total Hours</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>English VIII</td>
-                                                <td>1</td>
-                                                <td>0</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Smart Grid 
-                                                    Technology </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Power System 
-                                                    Protection </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>MLN Unit </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>1</td>
-                                                <td>2</td>
-                                                <td>5</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Energy and 
-                                                    Building 
-                                                    Management 
-                                                    Systems </td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Graduation Project - II</td>
-                                                <td>3</td>
-                                                <td>2</td>
-                                                <td>0</td>
-                                                <td>4</td>
-                                                <td>6</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer class="ftco-footer ftco-bg-dark ftco-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-6 col-lg-4">
-              <div class="ftco-footer-widget mb-5">
-                <h2 class="ftco-heading-2">Contact Us</h2>
-                <div class="block-23 mb-3">
-                  <ul>
-                    <li><span class="icon icon-map-marker"></span><span class="text">Beni Suef Governorate – Beni Suef City (East) – 1st District</span></li>
-                    <li><a href="tel:0822066651"><span class="icon icon-phone"></span><span class="text">0822066651</span></a></li>
-                    <li><a href="mailto:info@btu.edu.eg"><span class="icon icon-envelope"></span><span class="text">info@btu.edu.eg</span></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="ftco-footer-widget mb-5">
-                <h2 class="ftco-heading-2">Follow Us</h2>
-                <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-3">
-                  <li class="ftco-animate"><a href="https://www.facebook.com/people/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-Beni-Suef-Technological-University/100063584836266/"><span class="icon-facebook"></span></a></li>
-                  <li class="ftco-animate"><a href="https://www.linkedin.com/posts/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A8%D9%86%D9%8A-%D8%B3%D9%88%D9%8A%D9%81-%D8%A7%D9%84%D8%AA%D9%83%D9%86%D9%88%D9%84%D8%AC%D9%8A%D8%A9-020661262_beni-suef-technological-universityofficial-activity-7158029685212229633-Evl8/"><span class="icon-linkedin"></span></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <div class="ftco-footer-widget mb-5">
-                
-              </div>
-            </div>
-          </div>
-          <div class="row">
+        <div class="row">
             <div class="col-md-12 text-center">
-              <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> BSTU. All rights reserved.</p>
+                <p>Copyright &copy;
+                    <script>document.write(new Date().getFullYear());</script>
+                    BSTU. All rights reserved.
+                </p>
             </div>
-          </div>
         </div>
-      </footer>
-  
-      <!-- Scroll to Top Button -->
-      <button id="scrollToTop" class="scroll-to-top">
-        <span class="icon-arrow-up"></span>
-      </button>
-  
-      <!-- loader -->
-      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-  
-      <style>
-        .scroll-to-top {
-          position: fixed;
-          bottom: 20px;
-          right: 20px;
-          background: #007bff;
-          color: white;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          border: none;
-          cursor: pointer;
-          display: none;
-          align-items: center;
-          justify-content: center;
-          z-index: 1000;
-          transition: all 0.3s ease;
-        }
-  
-        .scroll-to-top:hover {
-          background: #0056b3;
-          transform: translateY(-3px);
-        }
-  
-        .ftco-footer-social li {
-          display: inline-block;
-          margin-right: 15px;
-        }
-  
-        .ftco-footer-social a {
-          color: #fff;
-          font-size: 24px;
-          transition: color 0.3s ease;
-        }
-  
-        .ftco-footer-social a:hover {
-          color: #007bff;
-        }
-  
-        .ftco-footer ul.list-unstyled li a {
-          color: rgba(255, 255, 255, 0.7);
-          transition: color 0.3s ease;
-        }
-  
-        .ftco-footer ul.list-unstyled li a:hover {
-          color: #fff;
-          padding-left: 5px;
-        }
-      </style>
-  
-      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery-migrate-3.0.1.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/jquery.easing.1.3.js"></script>
-      <script src="js/jquery.waypoints.min.js"></script>
-      <script src="js/jquery.stellar.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
-      <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/aos.js"></script>
-      <script src="js/jquery.animateNumber.min.js"></script>
-      <script src="js/scrollax.min.js"></script>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-      <script src="js/google-map.js"></script>
-      <script src="js/main.js"></script>
-  
-      <script>
-        $(document).ready(function(){
-          // Scroll to top button
-          const scrollToTopBtn = $('#scrollToTop');
-          
-          $(window).scroll(function() {
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button id="scrollToTop" class="scroll-to-top">
+    <span class="icon-arrow-up"></span>
+</button>
+
+<!-- loader -->
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00"/>
+    </svg>
+</div>
+
+<style>
+    .scroll-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #007bff;
+        color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        transition: all 0.3s ease;
+    }
+
+    .scroll-to-top:hover {
+        background: #0056b3;
+        transform: translateY(-3px);
+    }
+
+    .ftco-footer-social li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .ftco-footer-social a {
+        color: #fff;
+        font-size: 24px;
+        transition: color 0.3s ease;
+    }
+
+    .ftco-footer-social a:hover {
+        color: #007bff;
+    }
+
+    .ftco-footer ul.list-unstyled li a {
+        color: rgba(255, 255, 255, 0.7);
+        transition: color 0.3s ease;
+    }
+
+    .ftco-footer ul.list-unstyled li a:hover {
+        color: #fff;
+        padding-left: 5px;
+    }
+</style>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function () {
+        // Scroll to top button
+        const scrollToTopBtn = $('#scrollToTop');
+
+        $(window).scroll(function () {
             if ($(this).scrollTop() > 300) {
-              scrollToTopBtn.fadeIn();
+                scrollToTopBtn.fadeIn();
             } else {
-              scrollToTopBtn.fadeOut();
+                scrollToTopBtn.fadeOut();
             }
-          });
-  
-          scrollToTopBtn.click(function() {
+        });
+
+        scrollToTopBtn.click(function () {
             $('html, body').animate({scrollTop: 0}, 800);
             return false;
-          });
-  
-          // Optimize smooth scrolling
-          $('#ftco-navbar a').on('click', function(e) {
+        });
+
+        // Optimize smooth scrolling
+        $('#ftco-navbar a').on('click', function (e) {
             if (this.hash) {
-              e.preventDefault();
-              const hash = this.hash;
-              const navbarHeight = $('.navbar').outerHeight();
-              
-              $('html, body').animate({
-                scrollTop: $(hash).offset().top - navbarHeight
-              }, 800);
+                e.preventDefault();
+                const hash = this.hash;
+                const navbarHeight = $('.navbar').outerHeight();
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top - navbarHeight
+                }, 800);
             }
-          });
-  
-          // Add lazy loading to images
-          document.addEventListener('DOMContentLoaded', function() {
+        });
+
+        // Add lazy loading to images
+        document.addEventListener('DOMContentLoaded', function () {
             const images = document.querySelectorAll('img[data-src]');
             const imageObserver = new IntersectionObserver((entries, observer) => {
-              entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                  const img = entry.target;
-                  img.src = img.dataset.src;
-                  img.removeAttribute('data-src');
-                  observer.unobserve(img);
-                }
-              });
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                        observer.unobserve(img);
+                    }
+                });
             });
-  
+
             images.forEach(img => imageObserver.observe(img));
-          });
         });
-      </script>
-    </body>
-  </html>
+    });
+</script>
+</body>
+</html>
